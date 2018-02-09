@@ -1,20 +1,345 @@
-The MIT License (MIT)
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgba(234, 234, 234, 0.67);
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+}
 
-Copyright (c) 2018 YOUR_NAME_HERE
+.nivo-lightbox-notouch img {
+    width: 15vw;
+}
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+.container1 {
+    max-width: 60vw;
+    margin: auto;
+    text-align: center;
+    height: 600px;
+}
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+.headeren {
+    background-color: white;
+    padding-top: 10px;
+    height: 170px;
+    background-image: url(../imgs/ocean.jpg);
+    background-size: 100%;
+}
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+.overskrifthead {
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    font-size: calc(0.75em + 1vw);
+}
+
+p {
+    font-size: 0.7em;
+    margin-bottom: 1.3em;
+    font-family: 'Merriweather', serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.414em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2em;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.999em;
+}
+
+h4 {
+    font-size: 1.414em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #7ea3b1;
+    text-decoration: underline;
+}
+
+
+/*NAV */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(126, 163, 177, 0.49);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+span {
+    color: white;
+    margin: 30px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.forsidebillede {
+    width: 40%;
+    height: auto;
+}
+
+.forsidecontent {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.footer {
+    background-color: white;
+    height: 80px;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 0.4em;
+}
+
+
+/* FORMULAR */
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(126, 163, 177);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    background-color: #679869;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgba(229, 229, 229, 0.84);
+    padding: 20px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#formfailure {
+    background-color: red;
+    padding: 1em;
+}
+
+.formcontainer {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* LIST:HTML*/
+
+.liste {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/* KNAPPER */
+
+.btn {
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #7ea3b1;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background: #7ea3b1;
+    background-image: -webkit-linear-gradient(top, #7ea3b1, #6d8d99);
+    background-image: -moz-linear-gradient(top, #7ea3b1, #6d8d99);
+    background-image: -ms-linear-gradient(top, #7ea3b1, #6d8d99);
+    background-image: -o-linear-gradient(top, #7ea3b1, #6d8d99);
+    background-image: linear-gradient(to bottom, #7ea3b1, #6d8d99);
+    text-decoration: none;
+}
+
+
+/* mikroanimation */
+
+@keyframes wave {
+    0% {
+        border-radius: 25%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+
+@keyframes wave-after {
+    0% {
+        border-radius: 25%;
+        left: -50px;
+    }
+    100% {
+        border-radius: 50%;
+        left: -42px;
+    }
+}
+
+@keyframes wave-before {
+    0% {
+        border-radius: 25%;
+        left: 44px;
+    }
+    100% {
+        border-radius: 50%;
+        left: 36px;
+    }
+}
+
+@keyframes ocean {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 30px;
+    animation: ocean .9s infinite alternate ease-in-out;
+}
+
+.loading,
+.loading:after,
+.loading:before {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: #0097A7;
+    box-sizing: border-box;
+}
+
+.loading {
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    animation: wave 1.1s infinite alternate ease-in-out;
+}
+
+.loading:after,
+.loading:before {
+    position: absolute;
+    content: "";
+    displsy: block;
+    top: -3px;
+}
+
+.loading:after {
+    left: -42px;
+    animation: wave-after 1.1s infinite alternate ease-in-out;
+}
+
+.loading:before {
+    left: 36px;
+    animation: wave-before 1.1s infinite alternate ease-in-out;
+}
+
+.sun {}

@@ -1,7 +1,18 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <link rel="stylesheet" href="{{.Site.BaseURL}}css/normalize.css">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}css/style.css"> </head>
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/style.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}nivo/dist/nivo-lightbox.min.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}nivo/themes/default/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet"> </head>
 
-<body> HEADER
+<body>
+    <div class="headeren">
+        <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> {{ $currentPage := . }} {{ range .Site.Menus.main }} <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main " .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a> {{ end }} </div> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="overskrifthead"> <a href="index.html"><h1>OCEAN VIEW</h1></a></div>
+    </div>
